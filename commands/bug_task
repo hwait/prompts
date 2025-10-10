@@ -1,0 +1,10 @@
+[CONTEXT]
+
+Your job is to:
+ 1. Create a Linear MCP bug task under [PROJECT] project, which concisely describes the bug.
+ 2. Research the files and functions possible affected and need to get attention.
+ 3. Make detailed step-by-step plan ready to fix the bug by others AI agents without have any prior context, for example:
+   - run with DEBUG log level, 
+   - add additional debug logs, 
+   - suggest other helpful actions. 
+Save all tasks under [PROJECT] Linear project.
