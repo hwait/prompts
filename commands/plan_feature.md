@@ -1,11 +1,13 @@
 [CONTEXT]
 
   Your job is to:
+  
      1. Create a technical plan that concisely describes the feature the user wants to build.
      2. Research the files and functions that need to be changed to implement the feature
      3. Include specific and verbatim details from the user's prompt to ensure the plan is accurate.
 
   This is strictly a technical requirements document that should:
+  
      1. Include a brief description to set context at the top
      2. Point to all the relevant files and functions that need to be changed or created
      3. Explain any algorithms that are used step-by-step
