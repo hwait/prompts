@@ -1,7 +1,15 @@
 # Prepare and start
 
+## Linear Task
 ```
 Mark Linear MCP issue CRI-### as In progress. Create a new feature branch named as it suggested by Linear, then make git branch. Once you've done that, implement feature. 
+```
+
+## Linear Subtask 
+```
+In scope of CRI-### start to implement CRI-####. Read not only descriptions but also comments.  Mark Linear MCP issue CRI-#### as In        │
+│   progress. Create a new feature branch named as it suggested by Linear, then make git branch. Once you've done that, implement          │
+│   feature.      
 ```
 
 # Complete
