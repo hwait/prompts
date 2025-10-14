@@ -22,5 +22,5 @@ In scope of CRI-47 prepare to implement CRI-48. Read both tasks, not only descri
 # Complete
 
 ```
-Commit changes, push and make PR that implementates the feature, leaves feedback on the changes and mark the Linear MCP issue complete.
+Commit changes, as a message use this format: `{Task Id} {Tasl caption}`, then push and make PR that implementates the feature, leaves feedback on the changes
 ```
