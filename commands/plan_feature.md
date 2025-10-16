@@ -71,7 +71,7 @@ Tasks:
 ### 2.2. Reviewer (thinker) critique of plan
 ```
 Scope: [StoryId], [SubtaskId]
-Read issues and FIRST comment (the TODO plan).
+Read both Linear MCP issues and FIRST comment in [SubtaskId] (the TODO plan).
 
 Review for:
 - Completeness vs Acceptance Criteria
