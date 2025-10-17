@@ -55,10 +55,10 @@ Set priority by impact. Link ADR and contract files. Return created issue IDs.
 ## 2) Implementation preparation
 ### 2.1 Implementer plan (short + deterministic)
 ```
-[StoryId]=<...> [SubtaskId]=<...> [BRANCH_PREFIX]=feature/
+[StoryId]=<...> [SubtaskId]=<...>
 Tasks:
 1) Read both issues + comments. Mark [SubtaskId] In Progress.
-2) Create branch: <BRANCH_PREFIX><SubtaskId>-kebab-short-title
+2) Create branch: get the name as Linear suggestsed
 3) Produce a step-by-step TODO plan for this subtask only. Include:
    - Files + functions to touch
    - Tests to add/run
