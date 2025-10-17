@@ -112,8 +112,9 @@ Then comment in [SubtaskId]:
 ```
 ## 5) Code review (deep)
 ```
-Scope: [StoryId], [SubtaskId]
-Commits: [list or range]
+Scope: Linear MCP [StoryId], [SubtaskId] with comments
+Commits:
+[list or range]
 
 Review:
 - Match to TODO plan & acceptance criteria
