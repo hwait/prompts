@@ -51,6 +51,22 @@ Constraints:
 Using the JSON "plan.linear", create/update the Story and Subtasks in Linear under [PROJECT].
 Set priority by impact. Link ADR and contract files. Return created issue IDs.
 ```
+### 1.3. Another plan
+Make a same prompt as 1.1. for another hogh-thinking AI
+
+### 1.4. Review and concat 
+```
+ I need you to:
+- review Linear ticket [Ticket] with subtasks [Subtask1], [Subtask2] and [Subtask3],
+- adopt ideas/suggestions mentioned there into your plan,
+- adjust those subtasks with your suggestions,
+- add new subtasks if necessary, or just rewrite existing ones
+```
+
+### 1.5. Last review by first AI
+```
+Please review Linear ticket [Ticket] with subtasks [Subtask1], [Subtask2] and [Subtask3] for consistency, completeness, and the absence of logical errors so that those are ready for SDD tasks package formation.
+```
 
 ## 2) Implementation preparation
 ### 2.1 Implementer plan (short + deterministic)
