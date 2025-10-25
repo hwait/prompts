@@ -112,12 +112,12 @@ Update FIRST comment of [SubtaskId] with the "Updated TODO plan". Keep it as the
 - run the same 2.2. prompt but for current agent
 - make request:
 ```
-Based on [Subtask] comments with plan and your suggestions make the fully prepared complete plan corresponding all mentioned issues and suggestions, with maximum consistency and clearness. Plan should be fully ready to be implemented by AI agent with no prior knowledge of context. Save structured plan as a comment to CRI-70
+Based on Linear [Subtask] comments with plan and your suggestions make the fully prepared complete plan corresponding all mentioned issues and suggestions, with maximum consistency and clearness. Plan should be fully ready to be implemented by AI agent with no prior knowledge of context. Save structured plan as a comment to CRI-70
 ```
 - keep the last comment as the only one for the next stage
 ## 3) Implementation
 ```
-Scope: [SubtaskId]
+Scope: Linear [SubtaskId]
 Action: Implement ONLY Phase 1 of the FIRST comment checklist.
 Rules:
 - Small commits. Keep feature flagged OFF by default.
@@ -127,7 +127,7 @@ Rules:
 ## 4) Completion
 ```
 Commit format: "<SubtaskId> <Subtask short caption>"
-Then comment in [SubtaskId]:
+Then comment in Linear [SubtaskId]:
 - What changed
 - Tests added/updated and results
 - Observability added (metrics/spans)
