@@ -71,7 +71,7 @@ Please review Linear ticket [Ticket] with subtasks [Subtask1], [Subtask2] and [S
 ## 2) Implementation preparation
 ### 2.1 Implementer plan (short + deterministic)
 ```
-[StoryId]=<...> [SubtaskId]=<...>
+[StoryId]=CRI- , [SubtaskId]=CRI-
 Tasks:
 1) Read both issues + comments. Mark [SubtaskId] In Progress.
 2) Create branch: get the name as Linear suggestsed
@@ -86,8 +86,8 @@ Tasks:
 ```
 ### 2.2. Reviewer (thinker) critique of plan
 ```
-Scope: [StoryId], [SubtaskId]
-Read both Linear MCP issues and FIRST comment in [SubtaskId] (the TODO plan).
+Scope: CRI-, CRI-
+Read both Linear MCP issues and FIRST comment in CRI- (the TODO plan).
 
 Review for:
 - Completeness vs Acceptance Criteria
@@ -106,18 +106,18 @@ Output:
 ```
 ### 2.3 Update the first comment (idempotent)
 ```
-Update FIRST comment of [SubtaskId] with the "Updated TODO plan". Keep it as the canonical checklist.
+Update FIRST comment of CRI- with the "Updated TODO plan". Keep it as the canonical checklist.
 ```
 ### 2.4. Another AI review and combine
 - run the same 2.2. prompt but for current agent
 - make request:
 ```
-Based on Linear [Subtask] comments with plan and your suggestions make the fully prepared complete plan corresponding all mentioned issues and suggestions, with maximum consistency and clearness. Plan should be fully ready to be implemented by AI agent with no prior knowledge of context. Save structured plan as a comment to CRI-70
+Based on Linear CRI- comments with plan and your suggestions make the fully prepared complete plan corresponding all mentioned issues and suggestions, with maximum consistency and clearness. Plan should be fully ready to be implemented by AI agent with no prior knowledge of context. Save structured plan as a comment to CRI-
 ```
 - keep the last comment as the only one for the next stage
 ## 3) Implementation
 ```
-Scope: Linear [SubtaskId]
+Scope: Linear CRI-
 Action: Implement ONLY Phase 1 of the FIRST comment checklist.
 Rules:
 - Small commits. Keep feature flagged OFF by default.
@@ -126,8 +126,8 @@ Rules:
 ```
 ## 4) Completion
 ```
-Commit format: "<SubtaskId> <Subtask short caption>"
-Then comment in Linear [SubtaskId]:
+Commit format: "CRI- <Subtask short caption>"
+Then comment in Linear [CRI-:
 - What changed
 - Tests added/updated and results
 - Observability added (metrics/spans)
@@ -135,7 +135,7 @@ Then comment in Linear [SubtaskId]:
 ```
 ## 5) Code review (deep)
 ```
-Scope: Linear MCP [StoryId], [SubtaskId] with comments
+Scope: Linear MCP CRI-, CRI- with comments
 Commits:
 [list or range]
 
@@ -155,6 +155,6 @@ Output a comment with:
 ```
 ## 6) Implement review findings
 ```
-Apply the "fix_plan" for [SubtaskId].
+Apply the "fix_plan" for CRI-.
 ```
 If fixes are large, regenerate the TODO for fixes (2.1), get quick review (2.2), then implement.
